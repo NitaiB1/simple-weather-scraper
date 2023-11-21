@@ -7,7 +7,7 @@
         $file_headers = @get_headers("https://www.weather-forecast.com/locations/".$cityStr."/forecasts/latest");
         
         if(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found') {
-            $errorVar = '<p>City not found. Please check your spelling and try again or use a real city this time poes.</p>';
+            $errorVar = '<p>City not found. Please check your spelling and try again.</p>';
         }
 
         else {
